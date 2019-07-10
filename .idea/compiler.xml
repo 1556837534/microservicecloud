@@ -8,6 +8,9 @@
         <outputRelativeToContentRoot value="true" />
         <module name="microsercivecloudapi" />
         <module name="microservicecloud-eureka-7003" />
+        <module name="microservicecloudcomsumerhystrixdashboard" />
+        <module name="microservicecloudconfig3344" />
+        <module name="microservicecloudconfigclient3355" />
         <module name="microservicecloudconsumerdept80" />
         <module name="microservicecloudconsumerdeptfeign" />
         <module name="microservicecloudeureka7001" />
@@ -16,6 +19,7 @@
         <module name="microservicecloudproviderdept8002" />
         <module name="microservicecloudproviderdept8003" />
         <module name="microservicecloudproviderdepthystrix8001" />
+        <module name="microservicecloudzuulegateway9528" />
       </profile>
     </annotationProcessing>
   </component>

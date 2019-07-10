@@ -1,0 +1,30 @@
+server: 
+  port: 9528
+ 
+spring: 
+  application:
+    name: microservicecloud-zuul-gateway
+ 
+eureka: 
+  client: 
+    service-url: 
+      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka,http://eureka7003.com:7003/eureka  
+  instance:
+    instance-id: gateway-9528.com
+    prefer-ip-address: true 
+ 
+ 
+zuul: 
+  #ignored-services: microservicecloud-dept
+  prefix: /jackson
+  ignored-services: "*"        # 去除以前通过服务名访问的映射去掉
+  routes: 
+    mydept.serviceId: microservicecloud-dept
+    mydept.path: /mydept/**
+ 
+info:
+  app.name: jackson-microcloud
+  company.name: www.brothhood.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
+
